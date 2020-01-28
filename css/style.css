@@ -1,6 +1,10 @@
+html, body{
+  background: #111;
+}
 body{
-    font-family:sans-serif;
+    font-family:monospace;
     font-size:10px;
+    color: white;
 }
 
 .camera, a{
@@ -10,8 +14,7 @@ body{
 #menu{
   position:absolute;
   z-index:10;
-  color:#fff;
-  background:rgba(0,0,34,0.85);
+  background:rgba(0,0,0,0.85);
   bottom:0;
   right:0;
   padding:10px;
@@ -133,4 +136,5 @@ body{
 
 .show-camera .render.output{
     opacity:0.5;
+
 }

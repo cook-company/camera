@@ -1,7 +1,3 @@
-/**
- * @author Matt Cook, ZEBRADOG / matt@zebradog.com
- */
-
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 window.URL = window.URL || window.webkitURL;
 
