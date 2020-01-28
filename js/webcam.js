@@ -41,8 +41,9 @@ webcam.start = function(id,sid){
 
   function gotStream(stream) 
   {
-    if (window.URL) camvideo.src = window.URL.createObjectURL(stream);   
-    else  camvideo.src = stream; // Opera
+    camvideo.srcObject = stream;
+    //if (window.URL) camvideo.src = window.URL.createObjectURL(stream);   
+   // else  camvideo.src = stream; // Opera
     camvideo.onerror = function(e) {  stream.stop();  };
     stream.onended = noStream;
   }
